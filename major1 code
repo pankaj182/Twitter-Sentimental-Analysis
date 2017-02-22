@@ -1,0 +1,10 @@
+cd hadoop-2.6.0/
+
+sbin/start-all.sh
+
+hadoop fs -rmr /sentiment_output
+
+hadoop jar /home/gulshan/Desktop/sentiment.jar sentiment_analysis.driver /data2 /sentiment_output
+
+./flume-ng agent -n TwitterAgent -c conf -f ../conf/twitter.conf
+
