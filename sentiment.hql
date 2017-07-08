@@ -5,7 +5,7 @@ tweet string
 row format delimited 
 ;
 
-load data local inpath '/home/gulshan/Desktop/hadoop/Sentiment_Analysis/Data/*' into table raw_sentiment;
+load data local inpath '/home/pankaj/Desktop/hadoop/Sentiment_Analysis/Data/*' into table raw_sentiment;
 create table sentiment
 (
 tweet string
